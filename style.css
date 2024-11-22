@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+h1 {
+    color: #333;
+}
+
+#bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+}
+
+.cell.crossed {
+    background-color: #90ee90;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.cell.free {
+    background-color: #ffd700;
+    font-weight: bold;
+}
